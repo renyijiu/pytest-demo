@@ -1,0 +1,86 @@
+{
+  "environment": {
+    "Python": "2.7.18",
+    "Platform": "Darwin-22.3.0-arm64-arm-64bit",
+    "Packages": {
+      "py": "1.11.0",
+      "pytest": "4.6.11",
+      "pluggy": "0.13.1"
+    },
+    "Plugins": {
+      "json-report": "1.2.2",
+      "metadata": "1.11.0"
+    }
+  },
+  "tests": [],
+  "collectors": [
+    {
+      "outcome": "passed",
+      "nodeid": "",
+      "result": [
+        {
+          "type": "Package",
+          "nodeid": "plugins/__init__.py"
+        },
+        {
+          "type": "Module",
+          "nodeid": "test/test_cal.py"
+        }
+      ]
+    },
+    {
+      "outcome": "passed",
+      "nodeid": "plugins/__init__.py",
+      "result": []
+    },
+    {
+      "outcome": "passed",
+      "nodeid": "test/test_cal.py::TestPrint",
+      "result": [
+        {
+          "type": "Function",
+          "nodeid": "test/test_cal.py::TestPrint::test_right_print",
+          "lineno": 6
+        },
+        {
+          "type": "Function",
+          "nodeid": "test/test_cal.py::TestPrint::test_wrong_print",
+          "lineno": 9
+        },
+        {
+          "type": "Function",
+          "nodeid": "test/test_cal.py::TestPrint::test_answer",
+          "lineno": 12
+        }
+      ]
+    },
+    {
+      "outcome": "passed",
+      "nodeid": "test/test_cal.py::TestPrint",
+      "result": [
+        {
+          "type": "Instance",
+          "nodeid": "test/test_cal.py::TestPrint"
+        }
+      ]
+    },
+    {
+      "outcome": "passed",
+      "nodeid": "test/test_cal.py",
+      "result": [
+        {
+          "type": "Class",
+          "nodeid": "test/test_cal.py::TestPrint"
+        }
+      ]
+    }
+  ],
+  "created": 1676632787.615708,
+  "duration": 0.011100053787231445,
+  "exitcode": 0,
+  "root": "/Users/renyijiu/work/coscene/pytest-demo",
+  "summary": {
+    "collected": 3,
+    "total": 0
+  }
+}

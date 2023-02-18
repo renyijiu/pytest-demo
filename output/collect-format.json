@@ -1,0 +1,26 @@
+[
+  {
+    "type": "Module",
+    "children": [
+      {
+        "type": "Class",
+        "children": [
+          {
+            "type": "Function",
+            "title": "test_wrong_print"
+          },
+          {
+            "type": "Function",
+            "title": "test_answer"
+          },
+          {
+            "type": "Function",
+            "title": "test_right_print"
+          }
+        ],
+        "title": "TestPrint"
+      }
+    ],
+    "title": "test/test_cal.py"
+  }
+]

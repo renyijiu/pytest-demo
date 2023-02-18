@@ -1,0 +1,7 @@
+{"pytest_version": "4.6.11", "$report_type": "SessionStart"}
+{"longrepr": null, "_report_type": "CollectReport", "nodeid": "", "result": null, "outcome": "passed", "sections": []}
+{"longrepr": null, "_report_type": "CollectReport", "nodeid": "plugins/__init__.py", "result": null, "outcome": "passed", "sections": []}
+{"longrepr": null, "_report_type": "CollectReport", "nodeid": "test/test_cal.py::TestPrint", "result": null, "outcome": "passed", "sections": []}
+{"longrepr": null, "_report_type": "CollectReport", "nodeid": "test/test_cal.py::TestPrint", "result": null, "outcome": "passed", "sections": []}
+{"longrepr": null, "_report_type": "CollectReport", "nodeid": "test/test_cal.py", "result": null, "outcome": "passed", "sections": []}
+{"exitstatus": 0, "$report_type": "SessionFinish"}
