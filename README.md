@@ -23,6 +23,13 @@ python 版本为 python 2.7.18
 │   ├── pytest_custom_plugin.py
 │   └── pytest_reportlog.py
 ├── requirements.txt
+├── robot
+│   ├── Cal.py
+│   ├── Test.robot
+│   ├── add.py
+│   ├── log.html
+│   ├── output.xml
+│   └── report.html
 └── test
     └── test_cal.py
 ```
@@ -90,3 +97,14 @@ $ python -m pytest --collect-only -q --json-report --json-report-file output/jso
 
 pytest 提供了 plugin 的机制，可以通过 plugin 的方式来扩展 pytest 的功能，具体的可以参考 pytest
 的官方文档 [https://docs.pytest.org/en/4.6.x/writing_plugins.html](https://docs.pytest.org/en/4.6.x/writing_plugins.html)
+
+
+# Robot framework
+
+robot 目录下增加了 robot 测试框架的使用示例，测试用例可以查看 `Test.robot` 文件，
+
+```bash
+$ python -m robot -d robot/ robot/Test.robot  
+```
+
+执行的接口可以查看 robot 目录下的 `log.html`、`report.html` 文件

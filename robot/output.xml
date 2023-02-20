@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot rpa="false" generated="20230220 17:35:15.225" schemaversion="2" generator="Robot 4.1.3 (Python 2.7.18 on darwin)">
+<suite source="/Users/renyijiu/work/coscene/pytest-demo/robot/Test.robot" id="s1" name="Test">
+<test id="s1-t1" name="Calling function from python">
+<kw name="Add One To Integer" library="add">
+<var>${value}</var>
+<arg>${1}</arg>
+<msg timestamp="20230220 17:35:15.235" level="INFO">${value} = 2</msg>
+<status status="PASS" endtime="20230220 17:35:15.236" starttime="20230220 17:35:15.235"/>
+</kw>
+<kw name="Should Be Equal" library="BuiltIn">
+<arg>${value}</arg>
+<arg>${2}</arg>
+<doc>Fails if the given objects are unequal.</doc>
+<status status="PASS" endtime="20230220 17:35:15.236" starttime="20230220 17:35:15.236"/>
+</kw>
+<status status="PASS" endtime="20230220 17:35:15.236" starttime="20230220 17:35:15.235"/>
+</test>
+<test id="s1-t2" name="Calling function from python module">
+<kw name="Add Value" library="Cal">
+<var>${result}</var>
+<arg>${arg1}</arg>
+<msg timestamp="20230220 17:35:15.236" level="INFO">${result} = 101</msg>
+<status status="PASS" endtime="20230220 17:35:15.236" starttime="20230220 17:35:15.236"/>
+</kw>
+<kw name="Should Be Equal" library="BuiltIn">
+<arg>${result}</arg>
+<arg>${101}</arg>
+<doc>Fails if the given objects are unequal.</doc>
+<status status="PASS" endtime="20230220 17:35:15.237" starttime="20230220 17:35:15.236"/>
+</kw>
+<doc>test cal.py inc method</doc>
+<tag>method</tag>
+<status status="PASS" endtime="20230220 17:35:15.237" starttime="20230220 17:35:15.236"/>
+</test>
+<test id="s1-t3" name="Calling from keywords">
+<kw name="ADD TWO">
+<var>${v}</var>
+<arg>${100}</arg>
+<kw name="Add One To Integer" library="add">
+<var>${v}</var>
+<arg>${input}</arg>
+<msg timestamp="20230220 17:35:15.238" level="INFO">${v} = 101</msg>
+<status status="PASS" endtime="20230220 17:35:15.238" starttime="20230220 17:35:15.238"/>
+</kw>
+<kw name="Evaluate" library="BuiltIn">
+<var>${v}</var>
+<arg>${v} + 1</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<msg timestamp="20230220 17:35:15.238" level="INFO">${v} = 102</msg>
+<status status="PASS" endtime="20230220 17:35:15.238" starttime="20230220 17:35:15.238"/>
+</kw>
+<kw name="Log" library="BuiltIn">
+<arg>cal result: ${v}</arg>
+<doc>Logs the given message with the given level.</doc>
+<msg timestamp="20230220 17:35:15.238" level="INFO">cal result: 102</msg>
+<status status="PASS" endtime="20230220 17:35:15.238" starttime="20230220 17:35:15.238"/>
+</kw>
+<msg timestamp="20230220 17:35:15.238" level="INFO">${v} = 102</msg>
+<status status="PASS" endtime="20230220 17:35:15.239" starttime="20230220 17:35:15.237"/>
+</kw>
+<kw name="Should Be Equal" library="BuiltIn">
+<arg>${v}</arg>
+<arg>${102}</arg>
+<doc>Fails if the given objects are unequal.</doc>
+<status status="PASS" endtime="20230220 17:35:15.239" starttime="20230220 17:35:15.239"/>
+</kw>
+<status status="PASS" endtime="20230220 17:35:15.239" starttime="20230220 17:35:15.237"/>
+</test>
+<test id="s1-t4" name="Test Variable">
+<kw name="Should Be Equal" library="BuiltIn">
+<arg>${MESSAGE}</arg>
+<arg>Hello, world!</arg>
+<doc>Fails if the given objects are unequal.</doc>
+<status status="PASS" endtime="20230220 17:35:15.239" starttime="20230220 17:35:15.239"/>
+</kw>
+<doc>test variable</doc>
+<tag>variable</tag>
+<status status="PASS" endtime="20230220 17:35:15.239" starttime="20230220 17:35:15.239"/>
+</test>
+<status status="PASS" endtime="20230220 17:35:15.240" starttime="20230220 17:35:15.227"/>
+</suite>
+<statistics>
+<total>
+<stat fail="0" skip="0" pass="4">All Tests</stat>
+</total>
+<tag>
+<stat fail="0" skip="0" pass="1">method</stat>
+<stat fail="0" skip="0" pass="1">variable</stat>
+</tag>
+<suite>
+<stat fail="0" skip="0" id="s1" name="Test" pass="4">Test</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
